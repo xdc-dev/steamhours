@@ -1,0 +1,16 @@
+---
+application:
+  name: "steamhours"
+  project: "r"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "swag"
+    size: "200"
+    type: "fast_ssd"
+    mount_point: "/mnt/swag"
+routers:
+- name: "main-steamhours"
+  routes:
+  - application_name: "steamhours"
+    paths:
+    - "/*"
